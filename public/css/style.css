@@ -1,0 +1,531 @@
+/* 
+    Paleta de Colores         Tipografias: Roboto
+    Amarillo: #EAC926         Tamaños
+    Azul: #03264C             Cuerpo de textos: 12px
+    Celeste: #1259c3          Ultima visita/Ofertas: 24px
+    Gris Oscuro: #666         Precios: 18px
+    Gris Claro: #ebebeb       Descuentos: 16px
+    Verde: #39b54a            Descripciones: 16px
+ */
+
+* {
+    font-family: roboto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.header {
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-buscar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div-logo {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+.buscador {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-buscar {
+    width: 80%;
+    display: flex;
+}
+
+.buscar-input {
+    width: 80%;
+}
+
+.compra-sin-tarjeta {
+    margin-top: 10px;
+}
+.compra-sin-tarjeta a {
+    color: #000000;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: #000000;
+}
+
+.div-nav-buscar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+
+.fa-solid {
+    color: #03264c;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.site-nav {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.fa-bars {
+    color: #ffffff;
+}
+
+.section-banner {
+    display: flex;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.section-main {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-main h2 {
+    font-size: 24px;
+}
+
+.div-section-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+/* Tarjeta de productos */
+.card-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+    overflow: hidden;
+    cursor: default;
+    transition: all .4s ease;
+}
+.card-product:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    
+}
+
+.img-card-product{
+    width: 90%;
+}
+
+
+.card-description {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    text-align: start;
+    position: relative;
+}
+
+.truck {
+    width: min-content;
+    border: 1.5px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.fa-truck {
+    margin: 7px;
+    color: #39b54a;
+}
+
+.precio-descuento {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.precios {
+    font-size: 18px;
+    width: 40%;
+}
+
+.descuentos-p {
+    font-size: 16px;
+    color: #39b54a;
+    width: 60%;
+}
+
+.product-name {
+    display: none;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.options-footer {
+    margin-bottom: 20px;
+}
+
+.options-footer div {
+    margin: 20px 20px 0 20px;
+}
+
+.titulos-footer {
+    margin: 10px;
+}
+
+footer .fa-solid{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+/* //// Formulario de registro //// */
+
+.register-form {
+    margin: auto;
+    max-width: 360px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.register-form label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.datos-form {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.perfil-label {
+    margin-bottom: 5px;
+}
+
+.categorias-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.categorias-register div {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.categorias-register label {
+    text-align: center;
+    box-shadow: 0px 0px 5px #03264cb4;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 40%;
+    transition: .3s all ease;
+    margin: 0;
+}
+.categorias-register label:hover {
+    box-shadow: 0px 0px 10px #39b54ac4;
+}
+
+.categorias-register input[type="checkbox"]:checked + label {
+    background-color: #39b54a;
+    box-shadow: 0px 0px 10px #042548c4;
+    color:#ffffff;
+}
+.categorias-register input[type="checkbox"] {
+    opacity: 0;
+}
+
+.cargar-foto {
+    margin-top: 5px;
+}
+
+.button-register {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    width: 70%;
+}
+
+.submit-register {
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.reset-register {
+    background-color: #a40909;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+
+/* //// Formulario de login //// */
+
+
+.main-login section {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.form-login {
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.div-form-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.div-form-login input {
+    margin-top: 7px;
+}
+
+.div-button-login {
+    width: 100%;
+    text-align: center;
+}
+.div-button-login button {
+    background-color: #1259c3;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+.div-button-login button:hover {
+    background-color: #0022AA;
+}
+
+
+
+@media (min-width: 361px) {
+
+    .site-nav {
+        display: block;
+    }
+
+    .lista-nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .lista-nav li {
+        margin-bottom: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    
+    .product-name {
+        display: block;
+        opacity: 0%;
+        transition: 0.3s all ease;
+    }
+    .product-name:hover {
+        opacity: 100%;
+    }
+    
+}
+
+
+@media (min-width: 550px) {
+
+    .logo-buscar {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .div-logo {
+        width: 30%;
+        padding-left: 0;
+    }
+
+    .buscador {
+        width: 30%;
+    }
+
+    .compra-sin-tarjeta {
+        width: 30%;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .section-main {
+        text-align: left;
+    }
+
+    .lista-nav {
+        justify-content: flex-start;
+    }
+    .lista-nav li {
+        margin: 10px;
+    }
+
+    .section-main h2 {
+        margin-left: 30px;
+    }
+    
+    .div-section-article {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+    .card-product {
+        width: 235px;
+        margin: 5px 5px 20px 5px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .logo-buscar {
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-between;
+    }
+    
+    .buscador {
+        width: 40%;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .form-buscar {
+        width: 70%;
+        text-align: end;
+    }
+
+    .site-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .truck:hover {
+        animation: rotar 1s infinite
+    }
+    @keyframes rotar {
+        0% {transform: rotate(0deg)}
+        50% {transform: rotate(-90deg)}
+        100% {transform: rotate(0deg)}
+    }
+
+    .options-footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .options-footer .fa-solid{
+        transition: .3s all ease;
+    }
+    .options-footer .fa-solid:hover {
+        color: #03264c;
+    }
+
+    .options-footer div {
+        width: 30%;
+        margin: 0;
+    }
+    .options-footer p {
+        text-align: center;
+    }
+
+    .div-copyright {
+        width: 90%;
+        text-align: start;
+    }
+
+}
