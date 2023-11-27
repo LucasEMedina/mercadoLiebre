@@ -10,8 +10,11 @@ let app = express();
 //const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static('public'));
 
+//configuración para poder correr el proyecto en Render
+const port = process.env.PORT || 3001;
+
 // poner a escuchar al servidor y vincular con el puerto
-app.listen(3400, () => console.log("servidor corriendo en: http://localhost:3400"));
+app.listen(port, () => console.log(`servidor corriendo en el puertom ${port}`));
 
 // aplicar el método get para correr el servidor
 app.get("/", (req, res) => {
